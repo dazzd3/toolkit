@@ -14,5 +14,5 @@ git add . ('.' means all files)
 git commit -m "message"
 
 #Push changes
-git push
+git push origin main
 
