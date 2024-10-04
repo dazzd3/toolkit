@@ -16,3 +16,6 @@ git commit -m "message"
 #Push changes
 git push origin main
 
+#Pull changes
+git pull origin main
+
