@@ -1,6 +1,9 @@
 #Check which repo you are in
 git config --get remote.origin.url
 
+#Change the repo url
+git remote set-url origin https://github.com/dazzd3/{playground/toolkit/etc}.git
+
 #Get full repo origin details
 git remote show origin
 
