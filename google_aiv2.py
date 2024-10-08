@@ -11,7 +11,7 @@ def ai_query(prompt):
     response = model.generate_content(prompt)
     
     # print("Gemini response:")
-    return("Gemini response: " + response.text)
+    return("Gemini says: " + response.text)
 
 
 def main():
@@ -32,11 +32,15 @@ def main():
         response = ai_query(prompt)
         response_text.delete(1.0, tk.END)
         response_text.insert(tk.END, response)
+    
+    def on_enter(event):
+        run_gemini()
+
+    prompt_entry.bind('<Return>', on_enter)
 
     gemini_button = tk.Button(root, text="Ask Gemini", command=run_gemini)
     gemini_button.pack(pady=5)
 
-    root.mainloop()
-# if __name__ == "__main__":
+    root.mainloop()# if __name__ == "__main__":
 main()
 
