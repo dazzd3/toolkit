@@ -22,3 +22,6 @@ git push origin main
 #Pull changes
 git pull origin main
 
+#stash tips
+https://git-scm.com/docs/git-stash
+
