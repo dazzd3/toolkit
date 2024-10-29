@@ -33,7 +33,7 @@ def main():
         response_text.delete(1.0, tk.END)
         response_text.insert(tk.END, response)
     
-    def on_enter():
+    def on_enter(event):
         run_gemini()
 
     prompt_entry.bind('<Return>', on_enter)
